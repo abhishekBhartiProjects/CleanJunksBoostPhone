@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--- For ExpandableListView -->
+    <dimen name="group_right_padding">12dp</dimen>
+    <dimen name="item_top_margin">6dp</dimen>
+    <dimen name="item_horizontal_margin">6dp</dimen>
+    <dimen name="item_horizontal_padding">6dp</dimen>
+    <dimen name="item_level2_left_padding">12dp</dimen>
+
+    <dimen name="btn_margin">12dp</dimen>
+
+    <dimen name="imgbtn_padding">40dp</dimen>
+    <dimen name="space_xxs">2dp</dimen>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">6dp</dimen>
+    <dimen name="space_sm_md">8dp</dimen>
+    <dimen name="space_md">12dp</dimen>
+    <dimen name="space_md_lg">14dp</dimen>
+    <dimen name="space_lg">16dp</dimen>
+    <dimen name="space_xl">20dp</dimen>
+    <dimen name="space_xxl">24dp</dimen>
+
+
+</resources>

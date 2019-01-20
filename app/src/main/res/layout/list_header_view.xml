@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="?attr/colorPrimary">
+
+    <TextView android:id="@+id/progress_msg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="等待扫描" />
+
+    <TextView android:id="@+id/total_size"
+        android:layout_above="@id/progress_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="60sp"
+        android:textColor="@android:color/white"
+        android:text="0.00B" />
+
+</RelativeLayout>

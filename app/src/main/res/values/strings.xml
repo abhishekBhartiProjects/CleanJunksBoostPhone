@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CleanJunks</string>
+    <string name="action_settings">Settings</string>
+    <string name="junk_clean">Garbage cleaning</string>
+    <string name="process_clean">Process cleanup</string>
+    <string name="apk_clean">Useless installation package</string>
+    <string name="tmp_clean">Temporary Files</string>
+    <string name="log_clean">Log file</string>
+    <string name="cache_clean">Cache garbage</string>
+    <string name="system_cache">System cache</string>
+    <string name="title_activity_junk_clean">Recommended cleaning</string>
+    <string name="do_junk_clean">Clean up</string>
+
+    <string name="byte_short">B</string>
+    <!-- Suffix added to a number to signify size in kilobytes. -->
+    <string name="kilo_byte_short">KB</string>
+    <!-- Suffix added to a number to signify size in megabytes. -->
+    <string name="mega_byte_short">MB</string>
+    <!-- Suffix added to a number to signify size in gigabytes. -->
+    <string name="giga_byte_short">GB</string>
+    <!-- Suffix added to a number to signify size in terabytes. -->
+    <string name="tera_byte_short">TB</string>
+    <!-- Suffix added to a number to signify size in petabytes. -->
+    <string name="peta_byte_short">PB</string>
+
+    <string name="clean_file_size_suffix">%1$s%2$s</string>
+</resources>

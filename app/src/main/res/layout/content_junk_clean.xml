@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".junkClean.JunkCleanActivity"
+    tools:showIn="@layout/activity_junk_clean">
+
+    <Button
+        android:id="@+id/do_junk_clean"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:elevation="1dp"
+        android:text="@string/do_junk_clean" />
+
+    <ExpandableListView
+        android:id="@+id/junk_list"
+        android:layout_above="@id/do_junk_clean"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ExpandableListView>
+
+</RelativeLayout>
