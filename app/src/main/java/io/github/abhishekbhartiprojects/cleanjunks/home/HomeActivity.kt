@@ -4,16 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.RecyclerView
-//import butterknife.BindView
-//import butterknife.ButterKnife
 import io.github.abhishekbhartiprojects.cleanjunks.R
 
 class HomeActivity : AppCompatActivity() {
 
-//    @BindView(R.id.listContainerRV)
-//    lateinit var recyclerView: RecyclerView
+    lateinit var recyclerView: RecyclerView
 
     lateinit var viewModel: HomeVM
 
@@ -25,10 +23,15 @@ class HomeActivity : AppCompatActivity() {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_home)
-//        ButterKnife.bind(this)
 
         subscribeVM()
         subscribeUI()
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        getAllProcessData()
     }
 
     private fun subscribeVM() {
@@ -37,6 +40,16 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun subscribeUI() {
+        viewModel.allProcessDetails.observe(this, Observer { handleAllProcessDetails(it) })
+    }
+
+    //Calls
+    private fun getAllProcessData(){
+        viewModel.getAllProcessDetails()
+    }
+
+    //Handle response
+    private fun handleAllProcessDetails(any: Any){
 
     }
 
