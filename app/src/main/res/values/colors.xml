@@ -8,7 +8,7 @@
 
     <color name="purple_light">#e3d6ff</color>
     <color name="white">#FFFFFF</color>
-    <color name="white_50op">#80FFFFFF</color>
+    <color name="white_90op">#CCFFFFFF</color>
     <color name="white_80op">#10FFFFFF</color>
 
     <color name="pink">#d201ff</color>
@@ -19,4 +19,6 @@
     <color name="pink_50op">#80d201ff</color>
     <color name="blue_dark_50op">#800054ee</color>
     <color name="purple_dark_50op">#802603a2</color>
+
+    <color name="icon_color">#5649a0</color>
 </resources>

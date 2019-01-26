@@ -11,8 +11,6 @@ import io.github.abhishekbhartiprojects.cleanjunks.R
 
 class HomeActivity : AppCompatActivity() {
 
-    lateinit var recyclerView: RecyclerView
-
     lateinit var viewModel: HomeVM
 
 
@@ -25,7 +23,9 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         subscribeVM()
-        subscribeUI()
+        subscribeObserver()
+        initUI()
+
     }
 
     override fun onStart() {
@@ -39,8 +39,11 @@ class HomeActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this, factory).get(HomeVM::class.java)
     }
 
-    private fun subscribeUI() {
+    private fun subscribeObserver() {
         viewModel.allProcessDetails.observe(this, Observer { handleAllProcessDetails(it) })
+    }
+
+    private fun initUI(){
     }
 
     //Calls
@@ -52,6 +55,47 @@ class HomeActivity : AppCompatActivity() {
     private fun handleAllProcessDetails(any: Any){
 
     }
+
+    private fun startPhoneBoost(){
+
+    }
+
+    private fun startTrashCleaner(){
+
+    }
+
+    private fun startCPUCooler(){
+
+    }
+
+    private fun startSecurity(){
+
+    }
+
+    private fun startAd1(){
+        //ad
+    }
+
+    private fun startAd2(){
+        //ad
+    }
+
+    private fun startNetworkBoost(){
+
+    }
+
+    private fun startDuSwipe(){
+
+    }
+
+    private fun startSimilarPicture(){
+
+    }
+
+    private fun startAppNotCommonlyUsed(){
+
+    }
+
 
 
 }
